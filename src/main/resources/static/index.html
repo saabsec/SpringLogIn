@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +9,7 @@
 <meta name="author" content="">
 <link rel="icon" href="favicon.ico">
 
-<title>Signin Template for Bootstrap</title>
+<title></title>
 
 <!-- Bootstrap core CSS -->
 <link href="dist/css/bootstrap.min.css" rel="stylesheet">
@@ -34,7 +34,7 @@
 
 <body>
 
-	<div class="container">
+	<div class="container" ng-controller="SinginCtrl">
 
 		<form class="form-signin">
 			<h2 class="form-signin-heading">Please sign in</h2>
@@ -59,5 +59,9 @@
 
 	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 	<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+	<script src="libs/angular/angular.min.js"></script>
+	<script src="app/app.js"></script>
+	<script src="app/controllers/singin.controller.js"></script>
+	
 </body>
 </html>
