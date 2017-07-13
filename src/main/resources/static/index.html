@@ -52,23 +52,36 @@
 			<button class="btn btn-lg btn-primary btn-block" type="submit">Sign
 				in</button>
 		</form>
-	<div class="panel panel-default">
-		  <div class="panel-heading">
-		    <h3 class="panel-title">Simple Panel from Jona</h3>
-		  </div>
-		  <div class="panel-body">
-		   {{greeting.content}}
-		  </div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Simple Panel from Jona</h3>
+			</div>
+			<div class="panel-body">
+				{{greeting.content}}
+				<table class="table table-striped table-bordered">
+					<thead>
+						<tr>
+							<td>id</td>
+							<td>UID</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="(key, value) in greeting">
+							<td>{{ key }}</td>
+							<td>{{ value }}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 		</div>
-	
-	<!-- /container -->
+
+		<!-- /container -->
 
 
-	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-	<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
-	<script src="libs/angular/angular.min.js"></script>
-	<script src="app/app.js"></script>
-	<script src="app/controllers/singin.controller.js"></script>
-	
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+		<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+		<script src="libs/angular/angular.min.js"></script>
+		<script src="app/app.js"></script>
+		<script src="app/controllers/singin.controller.js"></script>
 </body>
 </html>
