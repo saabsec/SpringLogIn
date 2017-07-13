@@ -2,8 +2,8 @@
 
   'use strict';
   angular.module('app', [])
-   .controller('SinginCtrl', function() {
-     console.log('jona love u');
+   .controller('SinginCtrl', function($scope) {
+     $scope.greeting = {id: '', content: 'Hello Jona good job this time!'}
    });
   
 })();
